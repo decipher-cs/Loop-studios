@@ -488,6 +488,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 2.5rem;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .flex {
   display: flex;
 }
@@ -516,6 +526,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100vw;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[90vw\] {
+  width: 90vw;
+}
+
+.w-\[95vw\] {
+  width: 95vw;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -526,6 +552,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-0 {
   gap: 0px;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .border-2 {
@@ -583,6 +613,59 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .uppercase {
