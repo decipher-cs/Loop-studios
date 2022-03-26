@@ -712,6 +712,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.75rem;
 }
 
+.p-7 {
+  padding: 1.75rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -948,6 +956,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   aspect-ratio: auto;
 }
 
+.before\:aspect-square::before {
+  content: var(--tw-content);
+  aspect-ratio: 1 / 1;
+}
+
+.before\:aspect-\[3\\\/1\\\]::before {
+  content: var(--tw-content);
+  aspect-ratio: 3\/1\;
+}
+
+.before\:aspect-\[3\/1\\\]::before {
+  content: var(--tw-content);
+  aspect-ratio: 3 / 1\;
+}
+
+.before\:aspect-\[3\/1\]::before {
+  content: var(--tw-content);
+  aspect-ratio: 3 / 1;
+}
+
+.before\:aspect-\[1\/2\]::before {
+  content: var(--tw-content);
+  aspect-ratio: 1 / 2;
+}
+
+.before\:aspect-\[2\/1\]::before {
+  content: var(--tw-content);
+  aspect-ratio: 2 / 1;
+}
+
 .before\:h-\[15\%\]::before {
   content: var(--tw-content);
   height: 15%;
@@ -963,6 +1001,41 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 50px;
 }
 
+.before\:h-\[10\%\]::before {
+  content: var(--tw-content);
+  height: 10%;
+}
+
+.before\:h-\[100px\]::before {
+  content: var(--tw-content);
+  height: 100px;
+}
+
+.before\:h-\[t0px\]::before {
+  content: var(--tw-content);
+  height: t0px;
+}
+
+.before\:min-h-\[50px\]::before {
+  content: var(--tw-content);
+  min-height: 50px;
+}
+
+.before\:min-h-\[10px\]::before {
+  content: var(--tw-content);
+  min-height: 10px;
+}
+
+.before\:min-h-\[1px\]::before {
+  content: var(--tw-content);
+  min-height: 1px;
+}
+
+.before\:min-h-\[0px\]::before {
+  content: var(--tw-content);
+  min-height: 0px;
+}
+
 .before\:w-2\/5::before {
   content: var(--tw-content);
   width: 40%;
@@ -971,6 +1044,106 @@ Ensure the default browser behavior of the `hidden` attribute.
 .before\:w-\[100px\]::before {
   content: var(--tw-content);
   width: 100px;
+}
+
+.before\:w-\[\]::before {
+  content: var(--tw-content);
+  width: ;
+}
+
+.before\:w-\[1\/4\]::before {
+  content: var(--tw-content);
+  width: 1 / 4;
+}
+
+.before\:w-1\/4::before {
+  content: var(--tw-content);
+  width: 25%;
+}
+
+.before\:w-\[10\%\]::before {
+  content: var(--tw-content);
+  width: 10%;
+}
+
+.before\:w-\[10\]::before {
+  content: var(--tw-content);
+  width: 10;
+}
+
+.before\:w-\[300px\]::before {
+  content: var(--tw-content);
+  width: 300px;
+}
+
+.before\:w-\[200px\]::before {
+  content: var(--tw-content);
+  width: 200px;
+}
+
+.before\:w-\[20\%\]::before {
+  content: var(--tw-content);
+  width: 20%;
+}
+
+.before\:w-\[40\%\]::before {
+  content: var(--tw-content);
+  width: 40%;
+}
+
+.before\:w-\[30\%\]::before {
+  content: var(--tw-content);
+  width: 30%;
+}
+
+.before\:w-\[40px\]::before {
+  content: var(--tw-content);
+  width: 40px;
+}
+
+.before\:w-\[50px\]::before {
+  content: var(--tw-content);
+  width: 50px;
+}
+
+.before\:min-w-\[50px\]::before {
+  content: var(--tw-content);
+  min-width: 50px;
+}
+
+.before\:min-w-\[10px\]::before {
+  content: var(--tw-content);
+  min-width: 10px;
+}
+
+.before\:min-w-\[40px\]::before {
+  content: var(--tw-content);
+  min-width: 40px;
+}
+
+.before\:min-w-\[10\%\]::before {
+  content: var(--tw-content);
+  min-width: 10%;
+}
+
+.before\:min-w-\[20\%\]::before {
+  content: var(--tw-content);
+  min-width: 20%;
+}
+
+.before\:min-w-\[40\%\]::before {
+  content: var(--tw-content);
+  min-width: 40%;
+}
+
+.before\:min-w-\[50\%\]::before {
+  content: var(--tw-content);
+  min-width: 50%;
+}
+
+.before\:min-w-\[44\%\]::before {
+  content: var(--tw-content);
+  min-width: 44%;
 }
 
 .before\:bg-\[url\(\'\/images\/logo\.svg\'\)\]::before {
