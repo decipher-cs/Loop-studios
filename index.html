@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="/public/styles.css" />
+    <script defer src="/src/auto_scroll.js"></script>
+    <script defer src="/src/app.js"></script>
     <!-- <script defer="" type="text/javascript" src="/src/app.js"></script> -->
 
     <title>Loopstudios landing page</title>
@@ -13,36 +15,46 @@
 
   <body>
     <header
-      class="px-8 py-8 min-h-screen bg-[url('/images/mobile/image-hero.jpg')] bg-center bg-no-repeat bg-cover
-      grid items-start
-      before:bg-[url('/images/logo.svg')] before:h-[15%] before:w-2/5 before:inline-block before:bg-no-repeat before:bg-contain
-      before:row-[1/1]  before:col-[1/2]
-
-      "
+      class="px-8 py-8 min-h-screen 
+      bg-[url('/images/mobile/image-hero.jpg')] bg-center bg-no-repeat bg-cover grid items-start "
     >
+      <nav
+     class = "flex flex-wrap
+     before:bg-[url('/images/logo.svg')] 
+      before:aspect-[5/1] before:w-[40%] before:inline-flex before:bg-no-repeat before:bg-contain "
+      >
       <span
         tabindex="1"
-        class="inline-block bg-contain bg-[url('/images/icon-hamburger.svg')] p-3 bg-no-repeat cursor-pointer focus:rotate-90 transition-transform justify-self-end row-[1/1] col-[1/2]"
+        class="hamburger-icon bg-contain bg-[url('/images/icon-hamburger.svg')] p-3 bg-no-repeat cursor-pointer"
       ></span>
-      <nav class="text-white before:content-[''] max-h-0 overflow-hidden hidden">
+      <div
+        class="navbar-links bg-black text-white before:content-[''] min-h-0  overflow-hidden flex flex-col gap-5 basis-full"
+      
+      >
+
         <a href="#"> About</a>
         <a href="#"> Careers</a>
         <a href="#"> Events</a>
         <a href="#"> Products</a>
         <a href="#"> Support</a>
+      </div>
       </nav>
 
-      <p class="uppercase text-4xl font-thin text-white border-2 min-w-min py-3 px-5">
+      <p
+        class="uppercase text-4xl font-thin text-white border-2 min-w-min py-3 px-5"
+      >
         Immersive experiences that deliver
       </p>
     </header>
-    <section class=" px-6 flex gap-3  flex-col mt-20">
+    <section class="px-6 flex gap-3 flex-col mt-20">
       <img
         src="/images/mobile/image-interactive.jpg"
         alt="Picture of a person wearing a VR headset."
       />
       <article class="grid gap-8">
-        <h1 class="uppercase font-thin text-4xl text-back text-center pt-[2.5rem]">
+        <h1
+          class="uppercase font-thin text-4xl text-back text-center pt-[2.5rem]"
+        >
           The leader in interactive VR
         </h1>
         <p class="text-center font-gray-100">
@@ -112,28 +124,48 @@
         Make it fisheye</a
       >
     </section>
-    <footer class="bg-black text-white grid 
-    before:bg-[url('/images/logo.svg')] before:inline-block before:bg-contain before:min-h-[0px] before:min-w-[44%] before:aspect-[2/1] before:bg-no-repeat 
-    place-items-center
-   after:inline-block after:bg-contain
-   mt-20 p-6
-    ">
-<nav class="flex flex-col gap-5">
-
-      <a href="#"> About</a>
-      <a href="#"> Careers</a>
-      <a href="#"> Events</a>
-      <a href="#"> Products</a>
-      <a href="#"> Support</a>
-</nav>
-      <aside>© 2021 Loopstudios. All rights reserved.</aside>
+    <footer
+      class="bg-black text-white grid before:place-self-center before:bg-[url('/images/logo.svg')] before:inline-block before:bg-contain before:min-h-[0px] before:min-w-[44%] before:aspect-[5/1] before:bg-no-repeat mt-20 p-6 gap-7"
+    >
+      <nav class="flex flex-col gap-5 text-center">
+        <a href="#"> About</a>
+        <a href="#"> Careers</a>
+        <a href="#"> Events</a>
+        <a href="#"> Products</a>
+        <a href="#"> Support</a>
+      </nav>
+      <div class="flex flex-row gap-5 justify-center cursor-pointer">
+        <img class="cursor-pointer"
+          src="/images/icon-facebook.svg"
+          href="www.google.com"
+          alt="Clickable icon that links to facebook"
+        />
+        <img class="cursor-pointer"
+          src="/images/icon-twitter.svg"
+          href="www.google.com"
+          alt="Clickable icon that links to twitter"
+        />
+        <img class="cursor-pointer"
+        href="www.google.com"
+          src="/images/icon-pinterest.svg"
+          alt="Clickable icon that links to pintrest"
+        />
+        <img class="cursor-pointer"
+        href="www.google.com"
+          src="/images/icon-instagram.svg"
+          alt="Clickable icon that links to instagram"
+        />
+      </div>
+      <aside class="text-center">
+        © 2021 Loopstudios. All rights reserved.
+      </aside>
     </footer>
 
-    <div class="attribution">
+    <div class="attribution text-center">
       Challenge by
       <a href="https://www.frontendmentor.io/?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Jemend</a>.
     </div>
   </body>
 </html>
