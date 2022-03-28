@@ -19,16 +19,17 @@
       bg-[url('/images/mobile/image-hero.jpg')] bg-center bg-no-repeat bg-cover grid items-start "
     >
       <nav
-     class = "navbar-hero grid grid-cols-2  px-8 py-8 inset-0  auto-rows-min
+     class = "navbar-hero grid grid-cols-2  px-8 py-8 inset-0 auto-rows-max
      bg-transparent
      before:bg-[url('/images/logo.svg')] 
       before:aspect-[5/1] before:w-[80%] before:inline-flex before:bg-no-repeat before:bg-contain "
       >
       <img class="navbar-hero__img justify-self-end self-start cursor-pointer " src="./images/icon-hamburger.svg" alt="toggle button to hide and unhide navigation links.">
       <div
-        class="navbar-hero__links text-white before:content-[''] min-h-0  overflow-hidden hidden flex-col gap-5 basis-full col-span-full 
-        
+        class="navbar-hero__links text-white before:content-[''] overflow-hidden flex-col gap-5 basis-full col-span-full 
+        hidden
         font-thin text-3xl
+        mt-[25%]
         "
       
       >
@@ -41,7 +42,7 @@
       </div>
 
       <p
-        class="navbar-hero__text-content uppercase text-4xl font-thin text-white border-2 min-w-min py-3 px-5 "
+        class="navbar-hero__text-content uppercase text-4xl font-thin text-white border-2 min-w-min py-3 px-5 col-[1/-1] mt-[100%]"
       >
         Immersive experiences that deliver
       </p>
