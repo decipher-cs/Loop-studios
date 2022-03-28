@@ -1,6 +1,6 @@
-const elem_scroll = document.getElementsByTagName("footer")[0];
+const elem_scroll = document.querySelector(".section-grid");
 
 let offset = elem_scroll.offsetTop
 
 console.log(offset)
-window.scroll(0, 0)
+window.scroll(0, offset)

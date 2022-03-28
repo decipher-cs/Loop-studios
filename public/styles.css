@@ -476,11 +476,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
 }
 
-.inset-0 {
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
+.left-0 {
   left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.bottom-\[0\%\] {
+  bottom: 0%;
 }
 
 .order-3 {
@@ -491,56 +500,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: 1 / -1;
 }
 
-.col-\[\] {
-  grid-column: ;
-}
-
-.col-\[1\/-\] {
-  grid-column: 1 / -;
-}
-
 .col-\[1\/-1\] {
   grid-column: 1 / -1;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
-.mt-\[\] {
-  margin-top: ;
-}
-
-.mt-\[50\%\] {
-  margin-top: 50%;
-}
-
-.mt-\[30\%\] {
-  margin-top: 30%;
 }
 
 .mt-\[25\%\] {
   margin-top: 25%;
 }
 
-.mt-\[35\%\] {
-  margin-top: 35%;
+.mt-\[30vh\] {
+  margin-top: 30vh;
 }
 
-.mt-\[45\%\] {
-  margin-top: 45%;
-}
-
-.mt-\[100\%\] {
-  margin-top: 100%;
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .flex {
@@ -561,10 +534,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .aspect-\[3\/1\] {
   aspect-ratio: 3 / 1;
-}
-
-.max-h-0 {
-  max-height: 0px;
 }
 
 .min-h-screen {
@@ -594,8 +563,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-rows-none {
-  grid-template-rows: none;
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -652,10 +621,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-self-end {
   justify-self: end;
-}
-
-.justify-self-center {
-  justify-self: center;
 }
 
 .overflow-hidden {
@@ -814,6 +779,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -872,4 +842,98 @@ Ensure the default browser behavior of the `hidden` attribute.
 .before\:content-\[\'\'\]::before {
   --tw-content: '';
   content: var(--tw-content);
+}
+
+@media (min-width: 768px) {
+  .md\:order-2 {
+    order: 2;
+  }
+
+  .md\:order-1 {
+    order: 1;
+  }
+
+  .md\:order-\[1\] {
+    order: 1;
+  }
+
+  .md\:col-span-full {
+    grid-column: 1 / -1;
+  }
+
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .md\:col-\[\] {
+    grid-column: ;
+  }
+
+  .md\:col-\[1\] {
+    grid-column: 1;
+  }
+
+  .md\:col-\[1\/4\] {
+    grid-column: 1 / 4;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:aspect-auto {
+    aspect-ratio: auto;
+  }
+
+  .md\:aspect-\[\] {
+    aspect-ratio: ;
+  }
+
+  .md\:aspect-\[1\/3\] {
+    aspect-ratio: 1 / 3;
+  }
+
+  .md\:aspect-\[1\/2\] {
+    aspect-ratio: 1 / 2;
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:border-4 {
+    border-width: 4px;
+  }
+
+  .md\:bg-\[url\(\'\/images\/desktop\/image-deep-earth\.jpg\'\)\] {
+    background-image: url('/images/desktop/image-deep-earth.jpg');
+  }
+
+  .md\:bg-\[url\(\'\/images\/desktop\/image-night-arcade\.jpg\'\)\] {
+    background-image: url('/images/desktop/image-night-arcade.jpg');
+  }
+
+  .md\:bg-\[url\(\'\/images\/desktop\/image-soccer-team\.jpg\'\)\] {
+    background-image: url('/images/desktop/image-soccer-team.jpg');
+  }
+
+  .md\:bg-\[url\(\'\/images\/desktop\/image-grid\.jpg\'\)\] {
+    background-image: url('/images/desktop/image-grid.jpg');
+  }
+
+  .md\:bg-\[url\(\'\/images\/desktop\/image-from-above\.jpg\'\)\] {
+    background-image: url('/images/desktop/image-from-above.jpg');
+  }
+
+  .md\:bg-\[url\(\'\/images\/desktop\/image-pocket-borealis\.jpg\'\)\] {
+    background-image: url('/images/desktop/image-pocket-borealis.jpg');
+  }
+
+  .md\:bg-\[url\(\'\/images\/desktop\/image-curiosity\.jpg\'\)\] {
+    background-image: url('/images/desktop/image-curiosity.jpg');
+  }
+
+  .md\:bg-\[url\(\'\/images\/desktop\/image-fisheye\.jpg\'\)\] {
+    background-image: url('/images/desktop/image-fisheye.jpg');
+  }
 }
