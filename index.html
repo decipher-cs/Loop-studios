@@ -24,10 +24,11 @@
      before:bg-[url('/images/logo.svg')] 
       before:aspect-[5/1] before:w-[80%] md:before:w-[50%] md:before:self-center before:inline-flex before:bg-no-repeat before:bg-contain "
       >
-      <img class="navbar-hero__img justify-self-end md:self-center self-start cursor-pointer " src="./images/icon-hamburger.svg" alt="toggle button to hide and unhide navigation links.">
+      <img class="navbar-hero__img justify-self-end md:hidden self-center cursor-pointer " src="./images/icon-hamburger.svg" alt="toggle button to hide and unhide navigation links.">
       <div
         class="navbar-hero__links text-white before:content-[''] overflow-hidden flex-col gap-5 basis-full col-span-full 
         hidden
+        md:flex md:flex-row md:text-xl md:font-normal md:col-[2/-1] md:row-[1/2] md:self-center
         font-thin text-3xl
         mt-[25%]
         "
