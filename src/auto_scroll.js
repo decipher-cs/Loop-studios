@@ -1,4 +1,4 @@
-const elem_scroll = document.querySelector(".section-grid");
+const elem_scroll = document.querySelector("footer");
 
 let offset = elem_scroll.offsetTop
 
