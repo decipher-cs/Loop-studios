@@ -972,6 +972,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     order: 0;
   }
 
+  .md\:order-3 {
+    order: 3;
+  }
+
+  .md\:order-2 {
+    order: 2;
+  }
+
+  .md\:order-4 {
+    order: 4;
+  }
+
   .md\:col-\[2\/-1\] {
     grid-column: 2 / -1;
   }
@@ -986,6 +998,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:col-\[1\/-1\] {
     grid-column: 1 / -1;
+  }
+
+  .md\:col-\[\] {
+    grid-column: ;
   }
 
   .md\:row-\[1\/2\] {
@@ -1021,6 +1037,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-auto-columns: min-content;
   }
 
+  .md\:grid-flow-row {
+    grid-auto-flow: row;
+  }
+
+  .md\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
   .md\:auto-rows-min {
     grid-auto-rows: -webkit-min-content;
     grid-auto-rows: min-content;
@@ -1028,6 +1052,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1044,6 +1076,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:justify-items-end {
     justify-items: end;
+  }
+
+  .md\:place-self-start {
+    place-self: start;
+  }
+
+  .md\:place-self-end {
+    place-self: end;
   }
 
   .md\:self-center {
@@ -1118,6 +1158,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 5rem;
   }
 
+  .md\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -1176,9 +1221,34 @@ Ensure the default browser behavior of the `hidden` attribute.
     min-width: 20%;
   }
 
+  .md\:before\:min-w-\[30\%\]::before {
+    content: var(--tw-content);
+    min-width: 30%;
+  }
+
   .md\:before\:max-w-\[400px\]::before {
     content: var(--tw-content);
     max-width: 400px;
+  }
+
+  .md\:before\:max-w-\[\]::before {
+    content: var(--tw-content);
+    max-width: ;
+  }
+
+  .md\:before\:max-w-\[300px\]::before {
+    content: var(--tw-content);
+    max-width: 300px;
+  }
+
+  .md\:before\:max-w-\[250px\]::before {
+    content: var(--tw-content);
+    max-width: 250px;
+  }
+
+  .md\:before\:place-self-start::before {
+    content: var(--tw-content);
+    place-self: start;
   }
 
   .md\:before\:self-center::before {
