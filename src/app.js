@@ -39,3 +39,4 @@ navbarImg.addEventListener("click", (e) => {
     }
 
 })
+console.log(window.width)

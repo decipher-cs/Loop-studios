@@ -1,7 +1,7 @@
-const elem_scroll = document.querySelector("footer");
+const elem_scroll = document.querySelector(".section-amoto");
 
 let offset = elem_scroll.offsetTop
 
 console.log(offset)
-offset = 0;
+// offset = 0;
 window.scroll(0, offset)
