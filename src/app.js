@@ -15,28 +15,47 @@ const navbarText = document.querySelector(".navbar-hero__text-content");
 
 /* Hamburger Menu */
 
-// showNavbar.insertRule('.navbar-hero{background: black;}')
+function showNavbar() {
+    navbar.style.cssText = "background-color: black; position: fixed"
+    navbarImg.setAttribute('src', '/images/icon-close.svg')
+    navbarLinks.style.display = "flex"
+    navbarText.style.display = "none"
+
+}
+function hideNavbar() {
+    navbar.style.cssText = "background-color: transparent; position: static"
+    navbarImg.setAttribute('src', '/images/icon-hamburger.svg')
+    navbarLinks.style.display = "none"
+    navbarText.style.display = "flex"
+}
 
 navbarImg.addEventListener("click", (e) => {
     console.log(navbar.style.backgroundColor)
     if (navbar.style.backgroundColor == "transparent") {
-        navbar.style.cssText = "background-color: black; position: fixed"
-        navbarImg.setAttribute('src', '/images/icon-close.svg')
-        navbarLinks.style.display = "flex"
-        navbarText.style.display = "none"
+        showNavbar()
 
     } else if (navbar.style.backgroundColor == "black") {
-        navbar.style.cssText = "background-color: transparent; position: static"
-        navbarImg.setAttribute('src', '/images/icon-hamburger.svg')
-        navbarLinks.style.display = "none"
-        navbarText.style.display = "flex"
+        hideNavbar()
+
     } else {
-        navbar.style.cssText = "background-color: black; position: fixed"
-        navbarImg.setAttribute('src', '/images/icon-close.svg')
-        navbarLinks.style.display = "flex"
-        navbarText.style.display = "none"
+        showNavbar()
         console.log("error")
     }
 
 })
-console.log(window.width)
+
+
+/* window... name it later */
+
+window.addEventListener("resize", (win)=>{
+    // console.log("window rezised",window.innerWidth)
+    if ((window.innerWidth > 768)){
+        navbarLinks.style.display = "flex"
+        navbarText.style.display = "block"
+        navbar.style.cssText = "background-color: transparent; position: static"
+        navbarImg.setAttribute('src', '/images/icon-hamburger.svg')
+        // navbarLinks.style.display = "flex"
+    }else if ((window.innerWidth < 768) && (navbar.style.backgroundColor != "black")){
+        navbarLinks.style.display = "none"
+    }
+})

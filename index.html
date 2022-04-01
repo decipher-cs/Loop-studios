@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="/public/styles.css" />
-    <script defer src="/src/auto_scroll.js"></script>
     <script defer src="/src/app.js"></script>
     <!-- <script defer="" type="text/javascript" src="/src/app.js"></script> -->
 
@@ -18,7 +17,10 @@
       class="min-h-screen bg-[url('/images/mobile/image-hero.jpg')] bg-center bg-no-repeat bg-cover grid items-start"
     >
       <nav
-        class="z-10 navbar-hero grid grid-cols-2 px-8 py-8 left-0 right-0 top-0 bottom-[0%] auto-rows-max bg-transparent before:bg-[url('/images/logo.svg')] before:aspect-[5/1] before:w-[80%] md:before:w-[200px] md:before:max-w-[400px] md:before:self-center before:inline-flex md:before:row-[1/2] md:before:col-[1/2]  before:bg-no-repeat before:bg-contain"
+        class="z-10 navbar-hero grid grid-cols-2 px-8 py-8 left-0 right-0 top-0
+         bottom-[0%] auto-rows-min bg-transparent before:bg-[url('/images/logo.svg')] before:aspect-[5/1]
+          before:w-[80%] md:before:w-[200px] md:before:max-w-[400px] md:before:self-center before:inline-flex
+           md:before:row-[1/2] md:before:col-[1/2]  before:bg-no-repeat before:bg-contain"
       >
         <img
           class="navbar-hero__img justify-self-end md:hidden self-center cursor-pointer"
@@ -26,7 +28,9 @@
           alt="toggle button to hide and unhide navigation links."
         />
         <div
-          class="navbar-hero__links text-white before:content-[''] overflow-hidden flex-col gap-5 basis-full col-span-full hidden md:flex md:flex-row md:text-xl md:font-normal md:col-[1/-1] md:row-[1/2] md:self-center md:justify-end font-thin text-3xl "
+          class="navbar-hero__links text-white before:content-[''] overflow-hidden flex-col gap-5 basis-full col-span-full hidden md:flex md:flex-row 
+          md:text-xl md:font-normal md:col-[1/-1] md:row-[1/2] md:self-end md:justify-end font-thin text-3xl 
+          items-start md:justify-items-end mt-[10vh] md:mt-0"
         >
           <a href="#"> About</a>
           <a href="#"> Careers</a>
@@ -66,7 +70,7 @@
       </article>
     </section>
     <section
-      class="section-grid grid justify-items-stretch gap-8 px-6 md:px-20 mt-20 md:mt-52 grid-cols-1 md:grid-cols-4"
+      class="section-grid grid justify-items-stretch gap-8 px-6 md:px-20 mt-20 md:mt-52 grid-cols-1 md:grid-cols-[repeat(4,_minmax(0px,_1fr))]  overflow-hidden"
     >
       <h1
         class="text-4xl font-thin text-black place-self-center md:col-[1/4] md:justify-self-start"
@@ -80,64 +84,56 @@
       </button>
 
       <a
-        class="inline-grid bg-[url('/images/mobile/image-deep-earth.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[1/2] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-deep-earth.jpg')]
-        
+        class="inline-grid bg-[url('/images/mobile/image-deep-earth.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[4/7] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-deep-earth.jpg')]
         "
         href="#"
       >
         Deep earth</a
       >
       <a
-        class="inline-grid bg-[url('/images/mobile/image-night-arcade.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[1/2] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-night-arcade.jpg')]
-        
+        class="inline-grid bg-[url('/images/mobile/image-night-arcade.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[4/7] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-night-arcade.jpg')]
         "
         href="#"
       >
         Night arcade</a
       >
       <a
-        class="inline-grid bg-[url('/images/mobile/image-soccer-team.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[1/2] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-soccer-team.jpg')]
-        
+        class="inline-grid bg-[url('/images/mobile/image-soccer-team.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[4/7] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-soccer-team.jpg')]
         "
         href="#"
       >
         Soccer team VR</a
       >
       <a
-        class="inline-grid bg-[url('/images/mobile/image-grid.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[1/2] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-grid.jpg')]
-        
+        class="inline-grid bg-[url('/images/mobile/image-grid.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[4/7] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-grid.jpg')]
         "
         href="#"
       >
         The grid</a
       >
       <a
-        class="inline-grid bg-[url('/images/mobile/image-from-above.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[1/2] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-from-above.jpg')]
-        
+        class="inline-grid bg-[url('/images/mobile/image-from-above.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[4/7] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-from-above.jpg')]
         "
         href="#"
       >
         From up above VR</a
       >
       <a
-        class="inline-grid bg-[url('/images/mobile/image-pocket-borealis.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[1/2] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-pocket-borealis.jpg')]
-        
+        class="inline-grid bg-[url('/images/mobile/image-pocket-borealis.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[4/7] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-pocket-borealis.jpg')]
         "
         href="#"
       >
         Pocket borealis</a
       >
       <a
-        class="inline-grid bg-[url('/images/mobile/image-curiosity.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[1/2] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-curiosity.jpg')]
-        
+        class="inline-grid bg-[url('/images/mobile/image-curiosity.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[4/7] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-curiosity.jpg')]
         "
         href="#"
       >
         The curiosity</a
       >
       <a
-        class="inline-grid bg-[url('/images/mobile/image-fisheye.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[1/2] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-fisheye.jpg')]
-        
+        class="inline-grid bg-[url('/images/mobile/image-fisheye.jpg')] bg-no-repeat bg-center bg-cover text-white font-extralight text-3xl md:aspect-[4/7] aspect-[3/1] justify-start items-end pb-6 pl-6 md:bg-[url('/images/desktop/image-fisheye.jpg')]
         "
         href="#"
       >
