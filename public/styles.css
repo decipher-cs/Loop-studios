@@ -512,52 +512,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: 1 / -1;
 }
 
+.mt-\[10vh\] {
+  margin-top: 10vh;
+}
+
 .mt-\[30vh\] {
   margin-top: 30vh;
 }
 
 .mt-20 {
   margin-top: 5rem;
-}
-
-.mt-\[10vh\] {
-  margin-top: 10vh;
-}
-
-.mt-\[100vh\] {
-  margin-top: 100vh;
-}
-
-.mt-\[200px\] {
-  margin-top: 200px;
-}
-
-.mt-\[0vh\] {
-  margin-top: 0vh;
-}
-
-.mt-\[min10vh\] {
-  margin-top: min10vh;
-}
-
-.mt-\[min\(0px\2c _10vh\)\] {
-  margin-top: min(0px, 10vh);
-}
-
-.mt-\[minmax\(0px\2c _10vh\)\] {
-  margin-top: minmax(0px, 10vh);
-}
-
-.mt-\[max\(0px\2c _10vh\)\] {
-  margin-top: max(0px, 10vh);
-}
-
-.mt-\[20vh\] {
-  margin-top: 20vh;
-}
-
-.mt-\[15vh\] {
-  margin-top: 15vh;
 }
 
 .block {
@@ -604,31 +568,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .resize {
   resize: both;
-}
-
-.auto-rows-max {
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-}
-
-.auto-rows-\[\] {
-  grid-auto-rows: ;
-}
-
-.auto-rows-\[min\] {
-  grid-auto-rows: min;
-}
-
-.auto-rows-\[mi\] {
-  grid-auto-rows: mi;
-}
-
-.auto-rows-\[conte\] {
-  grid-auto-rows: conte;
-}
-
-.auto-rows-\[conten\] {
-  grid-auto-rows: conten;
 }
 
 .auto-rows-min {
@@ -975,12 +914,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-row: 1 / 2;
   }
 
-  .md\:mt-52 {
-    margin-top: 13rem;
-  }
-
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mt-52 {
+    margin-top: 13rem;
   }
 
   .md\:flex {
@@ -1012,6 +951,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-\[repeat\(4\2c _minmax\(0px\2c _250px\)\)\] {
+    grid-template-columns: repeat(4, minmax(0px, 250px));
+  }
+
+  .md\:grid-cols-\[repeat\(4\2c _minmax\(0px\2c _350px\)\)\] {
+    grid-template-columns: repeat(4, minmax(0px, 350px));
+  }
+
+  .md\:grid-cols-\[repeat\(4\2c _minmax\(0px\2c _300px\)\)\] {
+    grid-template-columns: repeat(4, minmax(0px, 300px));
+  }
+
   .md\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
@@ -1024,12 +975,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     place-content: center;
   }
 
-  .md\:items-center {
-    align-items: center;
-  }
-
   .md\:justify-end {
     justify-content: flex-end;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:justify-items-end {
@@ -1046,10 +997,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:self-end {
     align-self: flex-end;
-  }
-
-  .md\:self-center {
-    align-self: center;
   }
 
   .md\:justify-self-start {
@@ -1090,6 +1037,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:bg-\[url\(\'\/images\/desktop\/image-fisheye\.jpg\'\)\] {
     background-image: url('/images/desktop/image-fisheye.jpg');
+  }
+
+  .md\:bg-\[url\(\'\/images\/mobile\/image-hero\.jpg\'\)\] {
+    background-image: url('/images/mobile/image-hero.jpg');
+  }
+
+  .md\:bg-\[url\(\'\/images\/desktop\/image-hero\.jpg\'\)\] {
+    background-image: url('/images/desktop/image-hero.jpg');
   }
 
   .md\:px-20 {
